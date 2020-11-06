@@ -1,0 +1,164 @@
+
+<body>
+	<div id="wrapper">
+		
+		<div class="" id="banner-wrapper">
+			<header>
+				<div id="header-inner">
+					<a href="#" id="logo">
+						<img src="./images/pics/logoFinal.png" alt="">
+					</a>
+
+					<nav>
+						<a href="#" id="menu-icon">
+							<i class="fa fa-bars"></i>
+						</a>
+						<ul>
+							<li>
+								<a href="index.html" class="current">Inicio</a>
+							</li>
+							<li>
+								<a href="#skills">Sobre Nosotros</a>
+							</li>
+							<li>
+								<a href="#blog">Blog</a>
+							</li>
+							<li>
+								<a href="#services">Servicios</a>
+							</li>
+							<li>
+								<a href="#agend">Agendar Cita</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<video onloadedmetadata="this.muted=true" autoplay loop>
+					<source src="./media/video.mp4">
+				</video>
+			</header>
+		</div>
+	</div>
+	<h6>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></h6>
+</body>
+
+
+
+
+
+
+
+video{
+    width: 100%;
+}
+
+a {
+    color: #524c56;
+    text-decoration: none;
+    font-weight: bold;
+  }
+a:hover {
+    color: #c3d7df;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+#banner-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 3% 0;
+    position: absolute;
+}
+  
+header {
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+  
+header #logo img{
+    margin: 20px;
+    float: left;
+    width: 135px;
+    height: 75px;
+}
+
+/* NAVIGATION*/
+nav {
+    float: right;
+    padding: 25px 20px 0px 0px;
+}
+  
+#menu-icon {
+    display: none;
+    font-size: 50px;
+}
+  
+ul {
+    list-style: none;
+}
+  
+nav ul li {
+    font-size: 150%;
+    display: inline-block;
+    float: left;
+    padding: 10px;
+}
+  
+nav ul li a {
+    color: #6991AC;
+}
+  
+.current {
+    color: #3F5767;
+}
+  
+a:hover {
+    color: #a5bdcd;
+}
+
+
+
+
+
+
+<section class="aboutus contenedor" id="nosotros">
+			<h3>Sobre Nosotros</h3>
+			<p class="after">Conoce la mejor opción para tu salud bucal</p>
+			<div class="card">
+				<div class="content-card">
+					<div class="imageus">
+						<img src="./images/pics/imageUs2.jpg" alt="">
+					</div>
+					<div class="texto-aboutus">
+						<h4>Calidad</h4>
+						<p>Le garantizamos un trabajo <br> de excelente calidad</p>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content-card">
+					<div class="imageUs">
+						<img src="./images/pics/imagUs1.jpg" alt="">
+					</div>
+					<div class="texto-aboutus">
+						<h4>Equipo</h4>
+						<p>Contamos con clinicas bien <br> equipadas con todas las herramientas <br> necesarias para tu salud</p>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="content-card">
+					<div class="imageUs">
+						<img src="./images/pics/imageUs3.jpg" alt="">
+					</div>
+					<div class="texto-aboutus">
+						<h4>Alerta sobre el COVID-19</h4>
+						<p>Tu salud nos importa! <br>Estamos preparados con todas <br> las medidas de seguridad <br> para combatir el <a href="https://www.who.int/ith/2019-nCoV_advice_for_international_traffic-rev/es/">COVID-19</a> </p>
+					</div>
+				</div>
+			</div>
+		</section>

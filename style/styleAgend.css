@@ -95,6 +95,7 @@ body{
         display: flex;
         flex-direction: column;
         padding-left: 0;
+        padding-top: 0px;
         justify-content: center;
         align-items: center;
         flex-basis: 40%;
@@ -130,6 +131,7 @@ body{
     .wave{
         width: auto;
         height: 40%;
+        overflow: hidden;
     }
 
     .contenedor-textos{
