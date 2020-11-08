@@ -162,3 +162,141 @@ a:hover {
 				</div>
 			</div>
 		</section>
+
+
+
+
+
+
+
+		<script src="./js/index.js"></script>
+
+
+
+
+
+
+
+		<div class="et_pb_column et_pb_column_1_2 et_pb_column_38  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_29  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				<div class="et_pb_text_inner"><h2><strong>Hours</strong></h2></div>
+			</div> <!-- .et_pb_text --><div class="et_pb_module et_pb_divider et_pb_divider_8 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module dsm_business_hours dsm_business_hours_0">
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<div class="et_pb_module dsm_business_hours_child dsm_business_hours_child_0">
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					
+			
+			<div class="dsm_business_hours_item_wrapper">
+				<div class="dsm-business-hours-header">
+					<div class="dsm-business-hours-day">Monday</div>
+					<div class="dsm-business-hours-separator"></div>
+					<div class="dsm-business-hours-time"> 7AM - 7PM</div>
+				</div>
+			</div>
+				</div>
+			</div><div class="et_pb_module dsm_business_hours_child dsm_business_hours_child_1">
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					
+			
+			<div class="dsm_business_hours_item_wrapper">
+				<div class="dsm-business-hours-header">
+					<div class="dsm-business-hours-day">Tuesday</div>
+					<div class="dsm-business-hours-separator"></div>
+					<div class="dsm-business-hours-time"> 7AM - 7PM</div>
+				</div>
+			</div>
+				</div>
+			</div><div class="et_pb_module dsm_business_hours_child dsm_business_hours_child_2">
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					
+			
+			<div class="dsm_business_hours_item_wrapper">
+				<div class="dsm-business-hours-header">
+					<div class="dsm-business-hours-day">Wednesday</div>
+					<div class="dsm-business-hours-separator"></div>
+					<div class="dsm-business-hours-time"> 7AM - 7PM</div>
+				</div>
+			</div>
+				</div>
+			</div><div class="et_pb_module dsm_business_hours_child dsm_business_hours_child_3">
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					
+			
+			<div class="dsm_business_hours_item_wrapper">
+				<div class="dsm-business-hours-header">
+					<div class="dsm-business-hours-day">Thursday</div>
+					<div class="dsm-business-hours-separator"></div>
+					<div class="dsm-business-hours-time"> 8AM - 3PM Admin Only</div>
+				</div>
+			</div>
+				</div>
+			</div><div class="et_pb_module dsm_business_hours_child dsm_business_hours_child_4">
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					
+			
+			<div class="dsm_business_hours_item_wrapper">
+				<div class="dsm-business-hours-header">
+					<div class="dsm-business-hours-day">Friday</div>
+					<div class="dsm-business-hours-separator"></div>
+					<div class="dsm-business-hours-time"> 8AM - 3PM Admin Only</div>
+				</div>
+			</div>
+				</div>
+			</div>
+				</div>
+			</div>
+			</div>
+		font-family: Open Sans,Arial,sans-serif;
+line-height: 1.7em;
+font-weight: 500;
+-webkit-font-smoothing: antialiased;
+color: #005163;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+float: left;
+position: relative;
+z-index: 2;
+min-height: 1px;
+mix-blend-mode: unset!important;
+background-size: cover;
+background-position: 50%;
+background-repeat: no-repeat;
+width: 100%;
+padding-right: 5%;
+padding-left: 5%;
+margin-right: 0!important;
+margin-bottom: 0;
