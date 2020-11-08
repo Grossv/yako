@@ -1,10 +1,40 @@
+<?php
+$result="";
+if(isset($_POST['submit'])){
+	require 'Mailer/OAuth.php';
+	$mail = new PHPMailer;
+	$mail->isSMTP();
+	$mail->Host='smtp.gmail.com';
+	$mail->Port=587;
+	$mail->SMTPAuth=true;
+	$mail->SMTPSecure='tls';
+	$mail->Username='bestdental.supp@gmail.com';
+	$mail->Password='Chococrispy747.';
+
+	$mail->setFrom($_POST['email'],$_POST['nombre']);
+	$mail->addAddress('bestdental.supp@gmail.com');
+	$mail->addReplyTo($_POST['email'],$_POST['nombre']);
+
+	$mail->isHTML(true);
+	$mail->Subject='Enviado por '.$_POST['nombre'];
+	$mail->Body='<h1 align-center>Nombre: '.$_POST['nombre'].'<br>Email: '.$_POST['email'].'<br>Mensaje: '.$_POST['mensaje'].'</h1>';
+
+	if(!$mail->send()){
+	$result="Algo esta mal, intentelo de nuevo";
+	}
+	else{
+	$result="Gracias ".$_POST['nombre']." por contactarnos, espera la respuesta muy pronto";
+	}
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sobre Nosotros | Best Dental</title>
-	<link rel="stylesheet" href="./style/styleAbout.css">
+	<link rel="stylesheet" href="../style/styleAbout.css">
 </head>
 <body>
 	<header>
@@ -98,29 +128,16 @@
 		</section>
 	</main>
 	<footer>
-    <?php 
-$myemail = 'bestdental.supp@gmail.com';
-$name = $_POST['nombre'];
-$email = $_POST['email'];
-$message = $_POST['mensaje'];
-
-$to = $myemail;
-$email_subject = "Nuevo mensaje: $subject";
-$email_body = "Haz recibido un nuevo mensaje. \n Nombre: $name \n Correo: $email \n Mensaje: \n $message";
-$headers = "From: $email";
-
-mail($to, $email_subject, $email_body, $headers);
-echo "El mensaje se ha enviado correctamente";
-?>
 		<div class="contenedor">
             <h2 class="titulo-footer">Contactanos</h2>
             <h3 class="subtitulo-footer">Lo apreciariamos mucho</h3>
             <div class="footer">
-                <form action="enviar.php" name="enviar" method="post">
-                    <input type="text" name="nombre" id="" placeholder="Nombre">
-                    <input type="email" name="email" id="" placeholder="Email">
-                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese su mensaje..."></textarea>
-                    <input type="submit" value="Enviar">
+                <form action="" name="enviar" method="post">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje..."></textarea>
+					<input type="submit" value="Enviar">
+					<h5 class="notifCorrecto"> <?= $result; ?> </h5>
                 </form>
             </div>
         </div>
