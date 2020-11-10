@@ -50,6 +50,62 @@ header .boton{
     border-radius: 16px;
 }
 
+nav{
+	width: 100%;
+	position: fixed;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.5)
+}
+
+.nav1{
+	background: transparent;
+	height: 80px;
+	color: #fff;
+}
+
+.nav2{
+	background: #f2f2f2;
+	height: 100px;
+	color: #000;
+}
+
+.contenedor-nav{
+	display: flex;
+	margin: auto;
+	width: 90%;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1000px;
+	height: inherit;
+	overflow: hidden;
+}
+
+nav .enlaces a{
+	display: inline-block;
+	padding: 5px 0;
+	margin-right: 17px;
+	font-size: 17px;
+	font-weight: 300;
+	text-decoration: none;
+	border-bottom: 3px solid transparent;
+	color: inherit;
+}
+
+nav .enlaces a:hover{
+	border-bottom: 3px solid #1498a4;
+	transition: 0.6s;
+}
+
+.logo, .logo img{
+	height: 80px;
+}
+
+.icono{
+	display: none;
+	font-size: 24px;
+	padding: 23.5px 20px;
+}
+
+
 .sesgoabajo{
     z-index: 10;
     position: absolute;
@@ -205,7 +261,7 @@ header .boton{
     left: 0;
     border-width: 0 0 35vh 100vw;
     border-style: solid;
-    border-color: transparent transparent #2c3e50 transparent;
+    border-color: transparent transparent #f2f2f2 transparent;
 }
 
 .titulo-patrocinadores{
@@ -255,74 +311,82 @@ header .boton{
 }
 
 /* Footer */
-
-footer{
-    background: #2c3e50;
-    height: auto;
-}
-
-.titulo-footer,
-.subtitulo-footer{
-    color: #fff;
-    text-align: center;
-    font-weight: 400;
-    font-size: 56px;
-}
-
-.subtitulo-footer{
-    font-size: 16px;
-    margin-bottom: 64px;
-}
-
-form{
+footer {
+    background: #f2f2f2;
+    padding: 60px 0;
+    overflow: hidden;
     display: flex;
-    width: 100%;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: auto;
 }
 
-input[type="text"],
-input[type="email"]{
+#boton{
+    margin: 28px 0 0 0;
+    width: 130px;
     display: inline-block;
-    width: 48%;
-    padding: 13px;
-    border: none;
+    background: #085078;
+    text-align: center;
     color: #fff;
-    font-family: 'open sans';
-    background: rgba(37, 37, 33, .7);
-    margin-bottom: 16px;
-    border-top: 5px solid rgba(37, 37, 33, .7);
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    /* text-transform: uppercase; */
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(8, 81, 120, 0.795);
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus{
-    border-top: 5px solid rgba(255, 255, 255, 0.7);
+.partFooter {
+    width: 20%;
+    text-align: center;
 }
 
-textarea{
+.partFooter h4 {
+    color: #1d273b;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.partFooter a {
     display: block;
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%;
-    max-height: 200px;
-    min-height: 200px;
-    background: rgba(37, 37, 33, .7);
-    padding: 13px;
-    border: none;
-    color: #fff;
-    font-family: 'open sans';
-    margin-bottom: 16px;
+    text-decoration: none;
+    color: #5D6678;
+    font-weight: 300;
+    transition: color .3s ease-in-out;
+    margin-bottom: 10px;
 }
 
-input[type="submit"]{
+
+.partFooter a:hover {
+    color: #085078;
+}
+
+.partFooter img {
+    width: 70%;
+}
+
+.social-media a {
+    font-size: 20px;
     display: inline-block;
-    padding: 13px;
-    border: none;
+    color: #adb6c7;
+    border: 1px solid #adb6c7;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 5px;
+}
+
+.social-media a:hover {
     color: #fff;
-    background: rgba(37, 37, 33, .7);
-    width: 96px;
+    background-color: #085078;
+    border-color: #085078;
 }
 
 /* Responsive */
@@ -330,6 +394,16 @@ input[type="submit"]{
 @media screen and (max-width:900px) {
     .card {
         width: 48%;
+    }
+    /* Footer */
+
+    footer {
+        justify-content: space-evenly;
+    }
+
+    .partFooter {
+        width: 40%;
+        margin-bottom: 40px;
     }
 }
 
@@ -366,6 +440,12 @@ input[type="submit"]{
         width: 90%;
         height: 200px;
         margin-bottom: 50px;
+    }
+
+    /* Footer */
+    .partFooter {
+        width: 95%;
+        margin-bottom: 40px;
     }
 }
 

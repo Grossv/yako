@@ -5,18 +5,36 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sobre Nosotros | Best Dental</title>
 	<link rel="stylesheet" href="./style/styleAbout.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 	<header>
-		<div class="textos">
+		<nav id="nav" class="nav2">
+			<div class="contenedor-nav">
+				<div class="logo">
+					<img src="./images/pics/logoFinal.png" alt="">
+				</div>
+				<div class="enlaces" id="enlaces">
+					<a href="./index.html" id="enlace-home" class="btn-header">Inicio</a>
+					<a href="#inicio" id="enlace-aboutus" class="btn-header">Sobre Nosotros</a>
+					<a href="https://clinicabestdental.weebly.com/" id="enlace-blog" class="btn-header">Blog</a>
+					<a href="#" id="enlace-services" class="btn-header">Servicios</a>
+					<a href="./agend.html" id="enlace-agend" class="btn-header">Agendar</a>
+				</div>
+				<div class="icono" id="open">
+					<span>&#9776;</span>
+				</div>
+			</div>
+		</nav>
+		<div class="textos" id="inicio">
 			<h1 class="titulo">Clinica Best Dental</h1>
 			<h3 class="subtitulo">Sonrie Dios te ama!</h3>
-			<a href="#" class="boton">Agenda tu cita</a>
+			<a href="./agend.html" class="boton">Agenda tu cita</a>
 		</div>
-		<div class="sesgoabajo"></div>
+		<!-- <div class="sesgoabajo"></div> -->
 	</header>
 	<main>
-		<section class="acerca-de">
+		<section class="acerca-de" id="calidad">
 			<div class="contenedor">
 				<h2 class="sobre-nosotros">Sobre Nosotros</h2>
 				<h3 class="slogan">La mejor opción para tu salud</h3>
@@ -48,7 +66,7 @@
 			</div>
 			<div class="sesgoabajo"></div>
 		</section>
-		<section class="miembros">
+		<section class="miembros" id="team">
 			<div class="contenedor">
 				<h2 class="sobre-nosotros">Nuestro Equipo</h2>
 				<h3 class="slogan">Conoce a nuestro equipo de trabajo</h3>
@@ -98,18 +116,37 @@
 		</section>
 	</main>
 	<footer>
-		<div class="contenedor">
-            <h2 class="titulo-footer">Contactanos</h2>
-            <h3 class="subtitulo-footer">Lo apreciariamos mucho</h3>
-            <div class="footer">
-                <form action="" name="enviar" method="post">
-                    <input type="text" name="nombre" id="" placeholder="Nombre">
-                    <input type="email" name="email" id="" placeholder="Email">
-                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese su mensaje..."></textarea>
-                    <input type="submit" value="Enviar">
-                </form>
+        <div class="partFooter">
+            <a id="boton" href="./agend.html">Agenda tu Cita</a>
+        </div>
+        <div class="partFooter">
+            <h4>Sobre Nosotros</h4>
+            <a href="#calidad">Calidad</a>
+            <a href="#team">Equipo</a>
+            <a href="https://clinicabestdental.weebly.com/alerta-sobre-el-covid-19.html">Alerta sobre el COVID-19</a>
+        </div>
+        <div class="partFooter">
+            <h4>Servicios</h4>
+            <a href="#">General</a>
+            <a href="#">Cosmeticos</a>
+            <a href="#">Quirúrgico</a>
+        </div>
+        <div class="partFooter">
+            <h4>Encuentranos en</h4>
+            <div class="social-media">
+				<a href="https://www.facebook.com/Cl%C3%ADnica-Best-Dental-2335903409779621/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://clinicabestdental.weebly.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-weebly"></i></a>
+                <!-- <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i> -->
             </div>
         </div>
 	</footer>
+	<Script src="./js/jquery.js"></Script>
+	<!-- <script src="./js/main.js"></script> -->
+	<script src="./js/filtro.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
+    <script src="./js/about.js"></script>
 </body>
 </html>
